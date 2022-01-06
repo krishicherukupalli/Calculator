@@ -1,0 +1,46 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        Console.WriteLine("Add, subtract, multiply, divide?");
+        string ans = Console.ReadLine();
+
+      if (ans == "add"){
+        Console.WriteLine("Enter a number: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.WriteLine("Enter another number: ");
+        double num2 = double.Parse(Console.ReadLine());
+        double sum = num1 + num2;
+        Console.WriteLine("Sum is " + sum);
+      }
+
+      else if (ans == "subtract"){
+        Console.WriteLine("Enter a number: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.WriteLine("Enter another number: ");
+        double num2 = double.Parse(Console.ReadLine());
+        double sum = num1 - num2;
+        Console.WriteLine("Difference is " + sum);
+      }
+
+      else if (ans == "multiply"){
+        Console.WriteLine("Enter a number: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.WriteLine("Enter another number: ");
+        double num2 = double.Parse(Console.ReadLine());
+        double sum = num1 * num2;
+        Console.WriteLine("Product is " + sum);
+      }
+
+      else if (ans == "divide"){
+        Console.WriteLine("Enter a number: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.WriteLine("Enter another number: ");
+        double num2 = double.Parse(Console.ReadLine());
+        double sum = num1 / num2;
+        Console.WriteLine("Quotient is " + sum);
+      }
+
+    }
+
+}
